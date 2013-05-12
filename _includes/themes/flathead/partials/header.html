@@ -1,0 +1,28 @@
+<h1>
+  {% if page.url == "/index.html" %}
+    {{ site.title }}
+  {% else %}
+    <a href="{{ root_url }}/">{{ site.title }}</a>
+  {% endif %}
+</h1>
+{% if site.tagline %}
+  <h2>{{ site.tagline }}</h2>
+{% endif %}
+{% if page.url == "/index.html" %}
+  <img src="{{site.theme.flathead.header.avatar_image_path}}" class="img-circle picture" />
+{% else %}
+  <a href="{{ root_url }}/"><img src="{{site.theme.flathead.header.avatar_image_path}}" class="img-circle picture" /></a>
+{% endif %}
+
+<div class="row links">
+  <div class="span12">
+    {% for link in site.theme.flathead.header.links %}
+      {% if link == 'twitter' %}
+        <a class="btn" href="https://twitter.com/{{ site.author.twitter }}" title="My Twitter feed"><i class="icon-twitter"></i></a>
+      {% else if link == 'linkedin' %}
+        <a class="btn" href="http://www.linkedin.com/in/{{ site.author.linkedin }}" title="My LinkedIn profile"><i class="icon-linkedin"></i></a>
+      {% endif %}
+      {% comment %} TODO: Add more supported links {% endcomment %}
+    {% endfor %}
+  </div>
+</div>
