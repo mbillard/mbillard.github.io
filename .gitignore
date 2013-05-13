@@ -1,3 +1,4 @@
+_includes/.sass-cache/
 _site/*
 _theme_packages/*
 
@@ -6,5 +7,5 @@ Thumbs.db
 
 !.gitkeep
 
-.rbenv-version
-.rvmrc
+.ruby-version
+.ruby-gemset
