@@ -1,5 +1,6 @@
 _includes/.sass-cache/
 _site/*
+_deploy/
 _theme_packages/*
 
 Thumbs.db
