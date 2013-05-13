@@ -1,0 +1,44 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+  body {
+    > header h1 {
+      font-size: $mobile-title-font-size;
+    }
+  }
+}
+
+.tags-list {
+  .tag {
+    border-radius: 4px;
+    background: $flat-turquoise;
+    color: white;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 6px 13px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    &.tag-info {
+      background: $flat-peter-river;
+    }
+  }
+}
+
+.tile-icon {
+  display: block;
+  font-size: 96px;
+  margin: 28px 0 32px;
+  vertical-align: bottom;
+  color: $flat-midnight-blue;
+  &.big-icon {
+    font-size: 112px;
+    margin: 28px 0 16px;
+  }
+}

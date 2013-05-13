@@ -1,0 +1,149 @@
+// $noise-bg: image-url('noise.png') top left;
+// $img-border: inline-image('dotted-border.png');
+
+// // Main Link Colors
+// $link-color: lighten(#165b94, 3);
+// $link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25);
+// $link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4);
+// $link-color-active: adjust-color($link-color-hover, $lightness: -15);
+
+// // Main Section Colors
+// $main-bg: #f8f8f8;
+// $page-bg: #252525;
+// $article-border: #eeeeee;
+
+$header-padding: 40px 0;
+$content-padding: 40px 0;
+$footer-padding: 40px 0;
+
+$header-bg: $flat-wet-asphalt;
+$header-color: $white;
+// $header-border: lighten($header-bg, 15);
+$header-picture-size: 192px;
+$title-color: $flat-clouds;
+$subtitle-color: $flat-wet-asphalt;
+
+$footer-bg: $gray-darker;
+$footer-color: $flat-clouds;
+
+// $text-color: #222;
+// $text-color-light: #aaa;
+// $type-border: #ddd;
+
+// /* Navigation */
+// $nav-bg: #ccc;
+// $nav-bg-front: image-url('noise.png');
+// $nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
+// $nav-color: darken($nav-bg, 38);
+// $nav-color-hover: darken($nav-color, 25);
+// $nav-placeholder: desaturate(darken($nav-bg, 10), 15);
+// $nav-border: darken($nav-bg, 10);
+// $nav-border-top: lighten($nav-bg, 15);
+// $nav-border-bottom: darken($nav-bg, 25);
+// $nav-border-left: darken($nav-bg, 11);
+// $nav-border-right: lighten($nav-bg, 7);
+
+// /* Sidebar colors */
+// $sidebar-bg: #f2f2f2;
+// $sidebar-link-color: $link-color;
+// $sidebar-link-color-hover: $link-color-hover;
+// $sidebar-link-color-active: $link-color-active;
+// $sidebar-color: change-color(mix($text-color, $sidebar-bg, 80), $hue: hue($sidebar-bg), $saturation: saturation($sidebar-bg)/2);
+// $sidebar-border: desaturate(darken($sidebar-bg, 7), 10);
+// $sidebar-border-hover: darken($sidebar-bg, 7);
+// $sidebar-link-color-subdued: lighten($sidebar-color, 20);
+// $sidebar-link-color-subdued-hover: $sidebar-link-color-hover;
+
+// $footer-color: #888;
+// $footer-bg: #ccc;
+// $footer-bg-front: image-url('noise.png');
+// $footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
+// $footer-color: darken($footer-bg, 38);
+// $footer-color-hover: darken($footer-color, 10);
+// $footer-border-top: lighten($footer-bg, 15);
+// $footer-border-bottom: darken($footer-bg, 15);
+// $footer-link-color: darken($footer-bg, 38);
+// $footer-link-color-hover: darken($footer-color, 25);
+// $page-border-bottom: darken($footer-bg, 5);
+
+
+// /* Core theme application */
+
+#main-header {
+  background-color: $header-bg;
+  color: $header-color;
+  text-align: center;
+  padding: $header-padding;
+  h1, .picture, .links {
+    margin-top: 20px;
+  }
+  h1 > a {
+    color: $title-color;
+    text-decoration: none;
+  }
+  h2 {
+    color: $subtitle-color;
+  }
+  .picture {
+    width: $header-picture-size;
+    height: $header-picture-size;
+  }
+  .links {
+    .btn {
+      color: $flat-midnight-blue;
+      background-color: $flat-clouds;
+      &:hover {
+        background-color: $flat-alizarin;
+        color: $white;
+      }
+    }
+  }
+}
+
+#main-footer {
+  background-color: $footer-bg;
+  color: $footer-color;
+  text-align: center;
+  padding: $footer-padding;
+}
+
+body {
+  background-color: $default-bg;
+  color: $text-color;
+}
+
+.content-section {
+  padding: $content-padding;
+  .section-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &.alternate {
+    background-color: $alternate-bg;
+    color: $alternate-text-color;
+  }
+}
+
+// a {
+//   @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
+// }
+// aside.sidebar a {
+//   @include link-colors($sidebar-link-color, $hover: $sidebar-link-color-hover, $focus: $sidebar-link-color-hover, $active: $sidebar-link-color-active);
+// }
+// a {
+//   @include transition(color .3s);
+// }
+
+// html {
+//   background: $page-bg image-url('line-tile.png') top left;
+// }
+// body {
+//   > div {
+//     background: $sidebar-bg $noise-bg;
+//     border-bottom: 1px solid $page-border-bottom;
+//     > div {
+//       background: $main-bg $noise-bg;
+//       border-right: 1px solid $sidebar-border;
+//     }
+//   }
+// }

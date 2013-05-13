@@ -18,8 +18,13 @@
     <![endif]-->
 
     <!-- stylesheets -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    {% css_asset_tag style %}
+    - /_assets/flathead/css/bootstrap.scss
+    - /_assets/flathead/css/bootstrap-responsive.scss
+    - /_assets/flathead/css/flat-ui.sass
+    - /_assets/flathead/css/font-awesome.scss
+    - /_assets/flathead/css/style.scss
+    {% endcss_asset_tag %}
 
     <!-- fav and touch icons -->
     {% include custom/favicons.html %}
