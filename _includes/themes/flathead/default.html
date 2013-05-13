@@ -2,7 +2,6 @@
   <head>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} // {% endif %}{{ site.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     {% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
     <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
@@ -47,7 +46,7 @@
     </div>
     <footer id="main-footer">
       <div class="container">
-        <!-- {% include footer.html %} -->
+        {% include themes/flathead/partials/footer.html %}
       </div>
     </footer>
     {% include JB/analytics %}
