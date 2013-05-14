@@ -1,5 +1,5 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:year/:month/:title
+permalink: date
 
 exclude: [".ruby-version", ".ruby-gemset", "README.md", "Rakefile"]
 auto: true
