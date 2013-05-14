@@ -9,9 +9,9 @@
   <h2>{{ site.tagline }}</h2>
 {% endif %}
 {% if page.url == "/index.html" %}
-  <img src="{{site.theme.flathead.header.avatar_image_path}}" class="img-circle picture" />
+  <img src="{{ BASE_PATH }}/{{site.theme.flathead.header.avatar_image_path}}" class="img-circle picture" />
 {% else %}
-  <a href="{{ root_url }}/"><img src="{{site.theme.flathead.header.avatar_image_path}}" class="img-circle picture" /></a>
+  <a href="{{ root_url }}/"><img src="{{ BASE_PATH }}/{{site.theme.flathead.header.avatar_image_path}}" class="img-circle picture" /></a>
 {% endif %}
 
 <div class="row links">
