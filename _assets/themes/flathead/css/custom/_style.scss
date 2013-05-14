@@ -10,6 +10,9 @@
       font-size: $mobile-title-font-size;
     }
   }
+  .tile {
+    margin-bottom: $gridGutterWidth;
+  }
 }
 
 .tags-list {

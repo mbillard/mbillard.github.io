@@ -2,10 +2,11 @@
 // @include global-reset;
 // @include reset-html5;
 
+@import "themes/flathead/css/bootstrap/variables";
+@import "themes/flathead/css/custom/bootstrap_variables";
 @import "themes/flathead/css/custom/colors";
 @import "themes/flathead/css/custom/fonts";
 @import "themes/flathead/css/custom/layout";
-@import "themes/flathead/css/custom/bootstrap_variables";
 @import "themes/flathead/css/base";
 // @import "themes/flathead/css/partials";
 // @import "themes/flathead/css/plugins/**/*";
