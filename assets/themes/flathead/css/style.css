@@ -98,17 +98,22 @@ body > header h2 {
     padding: 0 20px;
   }
 
-  /* line 9, ../../../../_assets/themes/flathead/css/custom/_style.scss */
+  /* line 8, ../../../../_assets/themes/flathead/css/custom/_style.scss */
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 11, ../../../../_assets/themes/flathead/css/custom/_style.scss */
   body > header h1 {
     font-size: 3.2em;
   }
 
-  /* line 13, ../../../../_assets/themes/flathead/css/custom/_style.scss */
+  /* line 15, ../../../../_assets/themes/flathead/css/custom/_style.scss */
   .tile {
     margin-bottom: 20px;
   }
 }
-/* line 19, ../../../../_assets/themes/flathead/css/custom/_style.scss */
+/* line 21, ../../../../_assets/themes/flathead/css/custom/_style.scss */
 .tags-list .tag {
   border-radius: 4px;
   background: #1abc9c;
@@ -122,12 +127,12 @@ body > header h2 {
   zoom: 1;
   *display: inline;
 }
-/* line 31, ../../../../_assets/themes/flathead/css/custom/_style.scss */
+/* line 33, ../../../../_assets/themes/flathead/css/custom/_style.scss */
 .tags-list .tag.tag-info {
   background: #3498db;
 }
 
-/* line 37, ../../../../_assets/themes/flathead/css/custom/_style.scss */
+/* line 39, ../../../../_assets/themes/flathead/css/custom/_style.scss */
 .tile-icon {
   display: block;
   font-size: 96px;
@@ -135,7 +140,7 @@ body > header h2 {
   vertical-align: bottom;
   color: #2c3e50;
 }
-/* line 43, ../../../../_assets/themes/flathead/css/custom/_style.scss */
+/* line 45, ../../../../_assets/themes/flathead/css/custom/_style.scss */
 .tile-icon.big-icon {
   font-size: 112px;
   margin: 28px 0 16px;

@@ -6,6 +6,8 @@
     padding: 0 20px;
   }
   body {
+    padding-left: 0;
+    padding-right: 0;
     > header h1 {
       font-size: $mobile-title-font-size;
     }
