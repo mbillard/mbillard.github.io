@@ -1,28 +1,24 @@
 ---
 layout: post
 title: ! '"It''s only on your copy."'
+category: stories
 tags:
 - Cyber Generation
-- Work Experience
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '1'
 ---
-I wanted to talk about a funny story that happened during my first internship at Cyber Generation. In my last post, I mentioned a feature which would keep the user's session alive for as long as the page was up in the browser.
+<p>I wanted to talk about a funny story that happened during my first internship at Cyber Generation. In my last post, I mentioned a feature which would keep the user's session alive for as long as the page was up in the browser.</p>
 
-This feature was requested by my manager. The feature did have a purpose so I did not bother asking the importance of this feature or if it was important for everyone (plus it was my manager asking it and I didn't want to disappoint). It was a relatively simple request too, so I code the feature, test it on my machine and release it. The feature affected the intranet so everyone using it would get my feature the next time they load a page in the intranet.
+<p>This feature was requested by my manager. The feature did have a purpose so I did not bother asking the importance of this feature or if it was important for everyone (plus it was my manager asking it and I didn't want to disappoint). It was a relatively simple request too, so I code the feature, test it on my machine and release it. The feature affected the intranet so everyone using it would get my feature the next time they load a page in the intranet.</p>
 
-One thing that I did not mention is that the manager asked that the feature be implemented with a small permanent pop-up window (if someone closes it, it will be re-opened the next time a page is loaded). Of course, less than 5 minutes after releasing the feature, a manager comes in the developer room asking for what the hell that little window is doing there.
+<p>One thing that I did not mention is that the manager asked that the feature be implemented with a small permanent pop-up window (if someone closes it, it will be re-opened the next time a page is loaded). Of course, less than 5 minutes after releasing the feature, a manager comes in the developer room asking for what the hell that little window is doing there.</p>
 
-I explain the feature request, I learn that no one else was aware of the feature request and talk about it with my manager. We decide to disable it until I add an option in the user management page to enable or disable it. So I add a column in the <em>Users </em>table, add a field in the user management form and release the code while re-enabling the feature. The process was not this smooth due to an oversight from my part, but this is for another post. I'll just say that the problems involves a SQL <em>update</em> statement and no <em>where</em> clause...
+<p>I explain the feature request, I learn that no one else was aware of the feature request and talk about it with my manager. We decide to disable it until I add an option in the user management page to enable or disable it. So I add a column in the <em>Users </em>table, add a field in the user management form and release the code while re-enabling the feature. The process was not this smooth due to an oversight from my part, but this is for another post. I'll just say that the problems involves a SQL <em>update</em> statement and no <em>where</em> clause...</p>
 
-The feature was working correctly (except for the bug mentioned in my last post) and everyone could choose to use it or not. As you may have seen it coming, a few days after rolling the feature out, the only one who has it enabled is my manager. This brings me to a Dilbert comic which sums up the situation perfectly:
+<p>The feature was working correctly (except for the bug mentioned in my last post) and everyone could choose to use it or not. As you may have seen it coming, a few days after rolling the feature out, the only one who has it enabled is my manager. This brings me to a Dilbert comic which sums up the situation perfectly:</p>
 
-<a title="Dilbert comic for 2007/02/02" href="http://www.dilbert.com/strips/comic/2007-02-02/" target="_blank"><img class="aligncenter size-full wp-image-73" title="\&quot;It\'s only on your copy.\&quot;" src="http://www.mbillard.com/wp-content/uploads/2008/12/dilbert_20070202_onlyonyourcopy.gif" alt="Dilbert comic for 2007/02/02" width="500" height="155" /></a>
+<p><a title="Dilbert comic for 2007/02/02" href="http://www.dilbert.com/strips/comic/2007-02-02/"><img src="{{ BASE_PATH }}/images/2008-12-08/dilbert_20070202_onlyonyourcopy.gif" alt="Dilbert comic for 2007/02/02" /></a></p>
 
-I did learn a few very valuable lessons from that little project though:
+<p>I did learn a few very valuable lessons from that little project though:</p>
 <ul>
 	<li>Question the validity of a feature request, make sure it is something people would actually want</li>
 	<li>Proofread your queries before running them (however, we should have had test servers)</li>
