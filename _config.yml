@@ -17,8 +17,10 @@ author:
   name: Michel Billard
   # email: blah@email.test
   # github: username
+  facebook: billard.michel
   twitter: gogosse
   linkedin: mbillard
+  google_plus: 117588358238958457890
   # feedburner: feedname
 
 # The production_url is only used when full-domain names are needed
@@ -37,7 +39,7 @@ theme:
   flathead:
     header:
       avatar_image_path: images/michel-billard-6.jpg
-      links: ['twitter', 'linkedin']
+      links: ['twitter', 'facebook', 'google_plus', 'linkedin']
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
