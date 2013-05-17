@@ -100,6 +100,17 @@ $footer-color: $flat-clouds;
   }
 }
 
+.language-switch {
+  position: absolute;
+  top: $gridGutterWidth;
+  right: $gridGutterWidth;
+  color: $grayLighter;
+  text-decoration: none;
+  &:hover {
+    color: $flat-sun-flower;
+  }
+}
+
 #main-footer {
   background-color: $footer-bg;
   color: $footer-color;

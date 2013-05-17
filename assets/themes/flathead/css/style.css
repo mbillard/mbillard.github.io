@@ -39,6 +39,19 @@
 }
 
 /* line 103, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.language-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #eeeeee;
+  text-decoration: none;
+}
+/* line 109, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.language-switch:hover {
+  color: #f1c40f;
+}
+
+/* line 114, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 #main-footer {
   background-color: #222222;
   color: #ecf0f1;
@@ -46,37 +59,37 @@
   padding: 40px 0;
 }
 
-/* line 110, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 121, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 body {
   background-color: #fafafa;
   color: #222222;
 }
 
-/* line 115, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 126, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .content-section {
   padding: 40px 0;
 }
-/* line 117, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 128, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .content-section .section-header {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 121, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 132, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .content-section:nth-child(even) {
   background-color: #ecf0f1;
   color: #222222;
 }
-/* line 124, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 135, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .content-section:nth-child(even) .tile {
   background-color: #ecf0f1;
   color: #222222;
 }
 
-/* line 131, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 142, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 a {
   color: #3498db;
 }
-/* line 133, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 144, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 a:hover {
   color: #1d6fa5;
 }
