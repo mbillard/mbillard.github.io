@@ -72,6 +72,15 @@ body {
   color: #222222;
 }
 
+/* line 131, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+a {
+  color: #3498db;
+}
+/* line 133, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+a:hover {
+  color: #1d6fa5;
+}
+
 /* line 11, ../../../../_assets/themes/flathead/css/base/_typography.scss */
 body {
   font-size: 16px;

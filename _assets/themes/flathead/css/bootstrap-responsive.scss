@@ -18,6 +18,7 @@
 // -------------------------
 // Required since we compile the responsive stuff separately
 
+@import "themes/flathead/css/flat-ui/colors";
 @import "themes/flathead/css/bootstrap/variables";
 @import "themes/flathead/css/custom/bootstrap_variables"; // Modify this for custom colors, font-sizes, etc
 @import "themes/flathead/css/bootstrap/mixins";
