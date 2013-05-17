@@ -118,9 +118,13 @@ body {
     text-align: center;
     margin-bottom: 20px;
   }
-  &.alternate {
+  &:nth-child(even) {
     background-color: $alternate-bg;
     color: $alternate-text-color;
+    .tile {
+      background-color: $alternate-bg;
+      color: $alternate-text-color;
+    }
   }
 }
 

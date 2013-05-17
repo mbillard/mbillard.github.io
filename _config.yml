@@ -4,6 +4,9 @@ permalink: date
 exclude: [".ruby-version", ".ruby-gemset", "README.md", "Rakefile"]
 auto: true
 pygments: true
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "autolink", "strikethrough", "superscript"]
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
@@ -33,7 +36,7 @@ production_url: http://mbillard.github.io
 theme:
   flathead:
     header:
-      avatar_image_path: images/michel-billard-4.jpg
+      avatar_image_path: images/michel-billard-6.jpg
       links: ['twitter', 'linkedin']
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash

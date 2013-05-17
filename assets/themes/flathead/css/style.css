@@ -62,30 +62,36 @@ body {
   margin-bottom: 20px;
 }
 /* line 121, ../../../../_assets/themes/flathead/css/base/_theme.scss */
-.content-section.alternate {
+.content-section:nth-child(even) {
+  background-color: #ecf0f1;
+  color: #222222;
+}
+/* line 124, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.content-section:nth-child(even) .tile {
   background-color: #ecf0f1;
   color: #222222;
 }
 
 /* line 11, ../../../../_assets/themes/flathead/css/base/_typography.scss */
 body {
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.4;
   font-family: "Lato", Helvetica, Arial, sans-serif;
 }
-/* line 14, ../../../../_assets/themes/flathead/css/base/_typography.scss */
+/* line 15, ../../../../_assets/themes/flathead/css/base/_typography.scss */
 body > header h1 {
   font-size: 4.2em;
   font-family: "Rochester", sans-serif;
   font-weight: 400;
   line-height: 1.2;
 }
-/* line 20, ../../../../_assets/themes/flathead/css/base/_typography.scss */
+/* line 21, ../../../../_assets/themes/flathead/css/base/_typography.scss */
 body > header h2 {
   font-family: "Permanent Marker", sans-serif;
   font-size: 2.2em;
 }
 
-/* line 27, ../../../../_assets/themes/flathead/css/base/_typography.scss */
+/* line 28, ../../../../_assets/themes/flathead/css/base/_typography.scss */
 .content-section .section-header {
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -144,4 +150,19 @@ body > header h2 {
 .tile-icon.big-icon {
   font-size: 112px;
   margin: 28px 0 16px;
+}
+
+/* line 50, ../../../../_assets/themes/flathead/css/custom/_style.scss */
+.tile-image-title {
+  margin-bottom: 10px;
+}
+
+/* line 54, ../../../../_assets/themes/flathead/css/custom/_style.scss */
+.nospam {
+  display: none;
+}
+
+/* line 58, ../../../../_assets/themes/flathead/css/custom/_style.scss */
+.about-section p {
+  font-size: 18px;
 }

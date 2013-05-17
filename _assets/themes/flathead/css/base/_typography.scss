@@ -9,7 +9,8 @@
 // .mono { font-family: $mono; }
 
 body {
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.4;
   font-family: $font;
   > header h1 {
     font-size: $title-font-size;
