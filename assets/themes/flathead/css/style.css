@@ -97,23 +97,22 @@ a:hover {
 /* line 152, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .body {
   color: #333333;
-  margin-top: 40px;
 }
-/* line 155, ../../../../_assets/themes/flathead/css/base/_theme.scss */
-.body h1, .body h2, .body h3, .body h4, .body h5, .body h6 {
-  margin-top: 30px;
+/* line 154, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.body blockquote {
+  border-left-color: #e67e22;
 }
 
-/* line 185, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 184, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .navbar .brand {
   text-decoration: none;
 }
 
-/* line 191, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 190, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .variant-thinhead #main-header {
   padding: 0;
 }
-/* line 193, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 192, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .variant-thinhead #main-header h2 {
   color: #ecf0f1;
   display: inline;
@@ -121,50 +120,50 @@ a:hover {
   position: relative;
   top: 4px;
 }
-/* line 199, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 198, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .variant-thinhead #main-header h2:hover {
   color: #f1c40f;
 }
-/* line 203, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 202, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .variant-thinhead #main-header .picture {
   margin: 0 20px 0 0;
   width: 50px;
   height: 50px;
   vertical-align: top;
 }
-/* line 209, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 208, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .variant-thinhead #main-header .navbar .nav > li > a {
   padding: 29px 15px 32px;
 }
-/* line 211, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 210, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .variant-thinhead #main-header .navbar .nav > li > a:hover {
   color: #f1c40f;
 }
-/* line 215, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 214, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .variant-thinhead #main-header .navbar .divider-vertical {
   height: 81px;
   border-left-color: #2c3e50;
   border-right-color: transparent;
 }
 
-/* line 223, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 222, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .pagination {
   text-align: center;
 }
-/* line 225, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 224, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .pagination ul {
   background-color: #34495e;
 }
-/* line 229, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 228, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .pagination ul > li.previous > a, .pagination ul > li.previous > span, .pagination ul > li.next > a, .pagination ul > li.next > span, .pagination ul > li.archive > a, .pagination ul > li.archive > span {
   margin: 0;
 }
-/* line 231, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 230, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .pagination ul > li.previous > a:hover, .pagination ul > li.previous > a :focus, .pagination ul > li.previous > span:hover, .pagination ul > li.previous > span :focus, .pagination ul > li.next > a:hover, .pagination ul > li.next > a :focus, .pagination ul > li.next > span:hover, .pagination ul > li.next > span :focus, .pagination ul > li.archive > a:hover, .pagination ul > li.archive > a :focus, .pagination ul > li.archive > span:hover, .pagination ul > li.archive > span :focus {
   background-color: #2c3e50;
   color: #f1c40f;
 }
-/* line 238, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 237, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .pagination ul > li.archive > a, .pagination ul > li.archive > span {
   background: transparent;
   border: none;
@@ -172,15 +171,15 @@ a:hover {
   box-shadow: none !important;
   border-radius: 0;
 }
-/* line 246, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 245, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .pagination ul > li.archive:first-child > a, .pagination ul > li.archive:first-child > span {
   border-radius: 6px 0 0 6px;
 }
-/* line 251, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 250, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .pagination ul > li.archive:last-child > a, .pagination ul > li.archive:last-child > span {
   border-radius: 0 6px 6px 0;
 }
-/* line 256, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+/* line 255, ../../../../_assets/themes/flathead/css/base/_theme.scss */
 .pagination ul > li.archive:first-child:last-child > a, .pagination ul > li.archive:first-child:last-child > span {
   border-radius: 6px;
 }
@@ -214,9 +213,18 @@ body > header h2 {
 /* line 35, ../../../../_assets/themes/flathead/css/base/_typography.scss */
 .body {
   font-size: 20px;
+  margin-top: 40px;
+}
+/* line 38, ../../../../_assets/themes/flathead/css/base/_typography.scss */
+.body h1, .body h2, .body h3, .body h4, .body h5, .body h6 {
+  margin-top: 30px;
+}
+/* line 41, ../../../../_assets/themes/flathead/css/base/_typography.scss */
+.body blockquote {
+  margin: 20px 0 20px -20px;
 }
 
-/* line 41, ../../../../_assets/themes/flathead/css/base/_typography.scss */
+/* line 48, ../../../../_assets/themes/flathead/css/base/_typography.scss */
 .variant-thinhead #main-header h2 {
   font-family: "Rochester", sans-serif;
   font-weight: 400;
