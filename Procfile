@@ -1,2 +1,2 @@
-jekyll:  jekyll serve -w
+jekyll:  jekyll serve -w --future
 compass: compass watch _assets
