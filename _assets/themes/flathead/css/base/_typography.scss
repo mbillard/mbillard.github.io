@@ -41,6 +41,13 @@ body {
   blockquote {
     margin: 20px 0 20px -20px;
   }
+  ul, ol {
+    list-style: inside;
+    margin: 20px;
+    > li {
+      line-height: 1.4;
+    }
+  }
 }
 
 .variant-thinhead {

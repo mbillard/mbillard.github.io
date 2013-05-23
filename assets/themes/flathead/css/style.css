@@ -223,8 +223,17 @@ body > header h2 {
 .body blockquote {
   margin: 20px 0 20px -20px;
 }
+/* line 44, ../../../../_assets/themes/flathead/css/base/_typography.scss */
+.body ul, .body ol {
+  list-style: inside;
+  margin: 20px;
+}
+/* line 47, ../../../../_assets/themes/flathead/css/base/_typography.scss */
+.body ul > li, .body ol > li {
+  line-height: 1.4;
+}
 
-/* line 48, ../../../../_assets/themes/flathead/css/base/_typography.scss */
+/* line 55, ../../../../_assets/themes/flathead/css/base/_typography.scss */
 .variant-thinhead #main-header h2 {
   font-family: "Rochester", sans-serif;
   font-weight: 400;
