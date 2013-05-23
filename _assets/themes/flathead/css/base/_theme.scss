@@ -20,8 +20,11 @@ $header-bg: $flat-wet-asphalt;
 $header-color: $white;
 // $header-border: lighten($header-bg, 15);
 $header-picture-size: 192px;
+$thinhead-header-picture-size: 50px;
 $title-color: $flat-clouds;
 $subtitle-color: $flat-wet-asphalt;
+
+$header-link-hover-color: $flat-sun-flower;
 
 $footer-bg: $gray-darker;
 $footer-color: $flat-clouds;
@@ -107,7 +110,7 @@ $footer-color: $flat-clouds;
   color: $grayLighter;
   text-decoration: none;
   &:hover {
-    color: $flat-sun-flower;
+    color: $header-link-hover-color;
   }
 }
 
@@ -168,3 +171,42 @@ a {
 //     }
 //   }
 // }
+
+.navbar {
+  .brand {
+    text-decoration: none;
+  }
+}
+
+.variant-thinhead {
+  #main-header {
+    padding: 0;
+    h2 {
+      color: $title-color;
+      display: inline;
+      margin: 0;
+      position: relative;
+      top: 4px;
+      &:hover {
+        color: $header-link-hover-color;
+      }
+    }
+    .picture {
+      margin: 0 $gridGutterWidth 0 0;
+      width: $thinhead-header-picture-size;
+      height: $thinhead-header-picture-size;
+      vertical-align: top;
+    }
+    .navbar .nav > li > a {
+      padding: 29px 15px 32px; // 15 extra pixels on top and bottom to accommodate for the picture
+      &:hover {
+        color: $header-link-hover-color;
+      }
+    }
+    .navbar .divider-vertical {
+      height: 81px;
+      border-left-color: $flat-midnight-blue;
+      border-right-color: transparent;
+    }
+  }
+}

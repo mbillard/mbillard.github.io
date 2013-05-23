@@ -24,6 +24,15 @@ body {
   }
 }
 
+.variant-thinhead {
+  #main-header {
+    h2 {
+      font-family: $title-font;
+      font-weight: $title-font-weight;
+    }
+  }
+}
+
 .content-section {
   .section-header {
     font-family: $headline-font;

@@ -39,6 +39,7 @@ theme:
   flathead:
     header:
       avatar_image_path: images/michel-billard-6.jpg
+      avatar_small_image_path: images/michel-billard-6.jpg
       links: ['twitter', 'facebook', 'google_plus', 'linkedin']
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash

@@ -1,39 +1,41 @@
-{% if page.fr_path %}
-  <a href="{{ BASE_PATH }}{{ page.fr_path }}" class="language-switch">version française</a>
-{% elsif page.en_path %}
-  <a href="{{ BASE_PATH }}{{ page.en_path }}" class="language-switch">english version</a>
-{% endif %}
-
-<h1>
-  {% if page.url == "/index.html" %}
-    {{ site.title }}
-  {% else %}
-    <a href="{{ root_url }}/">{{ site.title }}</a>
+<div class="container">
+  {% if page.fr_path %}
+    <a href="{{ BASE_PATH }}{{ page.fr_path }}" class="language-switch">version française</a>
+  {% elsif page.en_path %}
+    <a href="{{ BASE_PATH }}{{ page.en_path }}" class="language-switch">english version</a>
   {% endif %}
-</h1>
-{% if site.tagline %}
-  <h2>{{ site.tagline }}</h2>
-{% endif %}
-{% if page.url == "/index.html" %}
-  <img src="{{ BASE_PATH }}/{{site.theme.flathead.header.avatar_image_path}}" class="img-circle picture" />
-{% else %}
-  <a href="{{ root_url }}/"><img src="{{ BASE_PATH }}/{{site.theme.flathead.header.avatar_image_path}}" class="img-circle picture" /></a>
-{% endif %}
 
-<div class="row links">
-  <div class="span12">
-    {% for link in site.theme.flathead.header.links %}
-      {% comment %} TODO: Add more supported links {% endcomment %}
-      {% case link %}
-      {% when 'twitter' %}
-        <a class="btn" href="https://twitter.com/{{ site.author.twitter }}" title="My Twitter feed"><i class="icon-twitter"></i></a>
-      {% when 'facebook' %}
-        <a class="btn" href="https://www.facebook.com/{{ site.author.facebook }}" title="My Facebook page"><i class="icon-facebook"></i></a>
-      {% when 'google_plus' %}
-        <a class="btn" href="https://plus.google.com/{{ site.author.google_plus }}/posts" title="My Google+ profile"><i class="icon-google-plus"></i></a>
-      {% when 'linkedin' %}
-        <a class="btn" href="http://www.linkedin.com/in/{{ site.author.linkedin }}" title="My LinkedIn profile"><i class="icon-linkedin"></i></a>
-      {% endcase %}
-    {% endfor %}
-  </div>
-</div>
+  <h1>
+    {% if page.url == "/index.html" %}
+      {{ site.title }}
+    {% else %}
+      <a href="{{ root_url }}/">{{ site.title }}</a>
+    {% endif %}
+  </h1>
+  {% if site.tagline %}
+    <h2>{{ site.tagline }}</h2>
+  {% endif %}
+  {% if page.url == "/index.html" %}
+    <img src="{{ BASE_PATH }}/{{site.theme.flathead.header.avatar_image_path}}" class="img-circle picture" />
+  {% else %}
+    <a href="{{ root_url }}/"><img src="{{ BASE_PATH }}/{{site.theme.flathead.header.avatar_image_path}}" class="img-circle picture" /></a>
+  {% endif %}
+
+  <div class="row links">
+    <div class="span12">
+      {% for link in site.theme.flathead.header.links %}
+        {% comment %} TODO: Add more supported links {% endcomment %}
+        {% case link %}
+        {% when 'twitter' %}
+          <a class="btn" href="https://twitter.com/{{ site.author.twitter }}" title="My Twitter feed"><i class="icon-twitter"></i></a>
+        {% when 'facebook' %}
+          <a class="btn" href="https://www.facebook.com/{{ site.author.facebook }}" title="My Facebook page"><i class="icon-facebook"></i></a>
+        {% when 'google_plus' %}
+          <a class="btn" href="https://plus.google.com/{{ site.author.google_plus }}/posts" title="My Google+ profile"><i class="icon-google-plus"></i></a>
+        {% when 'linkedin' %}
+          <a class="btn" href="http://www.linkedin.com/in/{{ site.author.linkedin }}" title="My LinkedIn profile"><i class="icon-linkedin"></i></a>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div><!-- / .row.links -->
+</div><!-- / .container -->
