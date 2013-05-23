@@ -210,3 +210,45 @@ a {
     }
   }
 }
+
+.pagination {
+  text-align: center;
+  ul {
+    background-color: $flat-wet-asphalt;
+    > li {
+      &.previous, &.next, &.archive {
+        > a, > span {
+          margin: 0;
+          &:hover, :focus {
+            background-color: $flat-midnight-blue;
+            color: $flat-sun-flower;
+          }
+        }
+      }
+      &.archive {
+        > a, > span {
+          background: transparent;
+          border: none;
+          padding: 11px 27px 12px;
+          box-shadow: none !important;
+          border-radius: 0;
+        }
+        &:first-child {
+          > a, > span {
+            border-radius: 6px 0 0 6px;
+          }
+        }
+        &:last-child {
+          > a, > span {
+            border-radius: 0 6px 6px 0;
+          }
+        }
+        &:first-child:last-child {
+          > a, > span {
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+}

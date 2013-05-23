@@ -6,43 +6,47 @@
           <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
         </header>
 
-        <div class="date">
-          <span>{{ page.date | date_to_long_string }}</span>
+        <div class="date muted">
+          <span>{{ page.date | date: "%A %B %e %Y" }}</span>
         </div>
 
         <div class="body">
           {{ content }}
         </div><!-- / .body -->
 
-        {% unless page.categories == empty %}
-        <ul class="tag_box inline">
-          <li><i class="icon-folder-open"></i></li>
-          {% assign categories_list = page.categories %}
-          {% include JB/categories_list %}
-        </ul>
-        {% endunless %}
+        {% if site.theme.flathead.display_post_categories %}
+          {% unless page.categories == empty %}
+          <ul class="tag_box inline">
+            <li><i class="icon-folder-open"></i></li>
+            {% assign categories_list = page.categories %}
+            {% include JB/categories_list %}
+          </ul>
+          {% endunless %}
+        {% endif %}
 
-        {% unless page.tags == empty %}
-        <ul class="tag_box inline">
-          <li><i class="icon-tags"></i></li>
-          {% assign tags_list = page.tags %}
-          {% include JB/tags_list %}
-        </ul>
-        {% endunless %}
+        {% if site.theme.flathead.display_post_tags %}
+          {% unless page.tags == empty %}
+          <ul class="tag_box inline">
+            <li><i class="icon-tags"></i></li>
+            {% assign tags_list = page.tags %}
+            {% include JB/tags_list %}
+          </ul>
+          {% endunless %}
+        {% endif %}
 
         <hr>
         <div class="pagination">
           <ul>
           {% if page.previous %}
-            <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+            <li class="previous"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}"><i class="icon-chevron-left"></i> {{ page.previous.title | truncate: 24, '…' }}</a></li>
           {% else %}
-            <li class="prev disabled"><a>&larr; Previous</a></li>
+            <!-- <li class="previous disabled"><span><i class="icon-chevron-left"></i> Previous</span></li> -->
           {% endif %}
-            <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+            <li class="archive"><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
           {% if page.next %}
-            <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+            <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title | truncate: 24, '…' }} <i class="icon-chevron-right"></i></a></li>
           {% else %}
-            <li class="next disabled"><a>Next &rarr;</a>
+            <!-- <li class="next disabled"><span>Next <i class="icon-chevron-right"></i></span></li> -->
           {% endif %}
           </ul>
         </div><!-- / .pagination -->

@@ -37,6 +37,8 @@ production_url: http://mbillard.github.io
 #
 theme:
   flathead:
+    display_post_categories: false
+    display_post_tags: false
     header:
       avatar_image_path: images/michel-billard-6.jpg
       avatar_small_image_path: images/michel-billard-6.jpg

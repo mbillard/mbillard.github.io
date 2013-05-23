@@ -137,6 +137,44 @@ a:hover {
   border-right-color: transparent;
 }
 
+/* line 214, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.pagination {
+  text-align: center;
+}
+/* line 216, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.pagination ul {
+  background-color: #34495e;
+}
+/* line 220, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.pagination ul > li.previous > a, .pagination ul > li.previous > span, .pagination ul > li.next > a, .pagination ul > li.next > span, .pagination ul > li.archive > a, .pagination ul > li.archive > span {
+  margin: 0;
+}
+/* line 222, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.pagination ul > li.previous > a:hover, .pagination ul > li.previous > a :focus, .pagination ul > li.previous > span:hover, .pagination ul > li.previous > span :focus, .pagination ul > li.next > a:hover, .pagination ul > li.next > a :focus, .pagination ul > li.next > span:hover, .pagination ul > li.next > span :focus, .pagination ul > li.archive > a:hover, .pagination ul > li.archive > a :focus, .pagination ul > li.archive > span:hover, .pagination ul > li.archive > span :focus {
+  background-color: #2c3e50;
+  color: #f1c40f;
+}
+/* line 229, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.pagination ul > li.archive > a, .pagination ul > li.archive > span {
+  background: transparent;
+  border: none;
+  padding: 11px 27px 12px;
+  box-shadow: none !important;
+  border-radius: 0;
+}
+/* line 237, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.pagination ul > li.archive:first-child > a, .pagination ul > li.archive:first-child > span {
+  border-radius: 6px 0 0 6px;
+}
+/* line 242, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.pagination ul > li.archive:last-child > a, .pagination ul > li.archive:last-child > span {
+  border-radius: 0 6px 6px 0;
+}
+/* line 247, ../../../../_assets/themes/flathead/css/base/_theme.scss */
+.pagination ul > li.archive:first-child:last-child > a, .pagination ul > li.archive:first-child:last-child > span {
+  border-radius: 6px;
+}
+
 /* line 11, ../../../../_assets/themes/flathead/css/base/_typography.scss */
 body {
   font-size: 16px;
