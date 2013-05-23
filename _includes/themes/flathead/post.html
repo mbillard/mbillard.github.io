@@ -1,7 +1,7 @@
 <section class="content-section">
   <div class="container">
     <div class="row">
-      <div class="span12">
+      <div class="span10 offset1">
         <header class="post">
           <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
         </header>
@@ -38,13 +38,13 @@
         <div class="pagination">
           <ul>
           {% if page.previous %}
-            <li class="previous"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}"><i class="icon-chevron-left"></i> {{ page.previous.title | truncate: 24, '…' }}</a></li>
+            <li class="previous"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}"><i class="icon-chevron-left"></i> {{ page.previous.title | truncate: 20, '…' }}</a></li>
           {% else %}
             <!-- <li class="previous disabled"><span><i class="icon-chevron-left"></i> Previous</span></li> -->
           {% endif %}
             <li class="archive"><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
           {% if page.next %}
-            <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title | truncate: 24, '…' }} <i class="icon-chevron-right"></i></a></li>
+            <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title | truncate: 20, '…' }} <i class="icon-chevron-right"></i></a></li>
           {% else %}
             <!-- <li class="next disabled"><span>Next <i class="icon-chevron-right"></i></span></li> -->
           {% endif %}
