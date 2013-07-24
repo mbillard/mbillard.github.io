@@ -1,6 +1,5 @@
 ---
 layout: post
-date: 3013-05-15
 ---
 
 * exemples of buttons in the first version of CoachOasis and the new version
