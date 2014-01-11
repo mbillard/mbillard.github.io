@@ -3,6 +3,8 @@ _site/*
 _deploy/
 _theme_packages/*
 
+.bundle
+
 Thumbs.db
 .DS_Store
 
