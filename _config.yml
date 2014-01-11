@@ -11,16 +11,25 @@ redcarpet:
 # so be sure to set them if your theme uses them.
 #
 title: Michel Billard
-# tagline: Site Tagline
+tagline: "Web Enthusiast / Technology Geek / Gamer"
 author:
   name: Michel Billard
+  bio:
+    This is my bio
+    that spans multiple lines.
+  location: Montreal, QC, Canada
+  occupation: Web developer
   # email: blah@email.test
-  # github: username
+  # blogger:
+  # dribble:
   facebook: billard.michel
-  twitter: gogosse
+  github: mbillard
+  google_plus: +MichelBillard
+  # instagram:
   linkedin: mbillard
-  google_plus: 117588358238958457890
-  # feedburner: feedname
+  steam: gogosse
+  twitter: gogosse
+  # wordpress:
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -30,21 +39,48 @@ author:
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url: http://mbillard.github.io
+production_url: http://www.mbillard.com
 
 # Theme specific variables, switches, etc.
 #
 theme:
-  flathead:
-    display_post_categories: false
-    display_post_tags: false
-    header:
-      avatar_image_path: images/michel-billard-6.jpg
-      avatar_small_image_path: images/michel-billard-6.jpg
-      links: ['twitter', 'facebook', 'google_plus', 'linkedin']
+  minime:
+    social_links: ['linkedin', 'twitter', 'facebook', 'google_plus', 'blogger', 'dribble', 'github', 'instagram', 'steam', 'wordpress']
+    # Each link will be displayed in the order listed here
+    # Format:
+    #
+    #  name:
+    #  description:
+    #  url:
+    #  image:
+    #
+    links:
+      - name: Out of Scope
+        description: Blog about software development related topics
+        url: http://www.outofscope.com
+        # image:
+      - name: Survvit
+        description: Simple one-question survey creator
+        url: http://www.survvit.com
+        # image:
+      - name: VarageSale
+        description: A virtual garage sale site. We're building this at Codified.
+        url: http://www.varagesale.com
+        # image:
+    # header:
+    #   avatar_image_path: images/michel-billard-6.jpg
+    #   avatar_small_image_path: images/michel-billard-6.jpg
+    #   links: ['twitter', 'facebook', 'google_plus', 'linkedin']
 
-# All Jekyll-Bootstrap specific configurations are namespaced into this hash
+# Settings for analytics helper
+# Set 'provider' to the analytics provider you want to use.
+# Set 'provider' to false to turn analytics off globally.
 #
+analytics:
+  provider: google
+  google:
+      tracking_id: 'UA-1804335-1'
+
 JB:
   version: 0.3.0
 
@@ -140,4 +176,3 @@ JB:
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-

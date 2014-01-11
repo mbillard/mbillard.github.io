@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% include themes/minime/partials/head.html %}
+<body>
+  {% include themes/minime/partials/header.html %}
+  <main>
+    {% if site.author.bio %}
+      <p class='bio'>{{ site.author.bio }}</p>
+    {% endif %}
+
+    {% if site.author.location %}
+      <div class='location'>
+        {{ site.author.location }}
+      </div>
+    {% endif %}
+
+    {% if site.author.occupation %}
+      <div class='occupation'>
+        {{ site.author.occupation }}
+      </div>
+    {% endif %}
+
+    <ul class='social'>
+    {% for link in site.theme.minime.social_links %}
+      {% case link %}
+      {% when 'twitter' %}
+        {% if site.author.twitter %}
+        <li><a href="https://twitter.com/{{ site.author.twitter }}" title="My Twitter feed">T</a></li>
+        {% endif %}
+      {% when 'facebook' %}
+        {% if site.author.facebook %}
+        <li><a href="https://www.facebook.com/{{ site.author.facebook }}" title="My Facebook page">F</a></li>
+        {% endif %}
+      {% when 'github' %}
+        {% if site.author.github %}
+        <li><a href="https://www.github.com/{{ site.author.github }}" title="My Github profile">g</a></li>
+        {% endif %}
+      {% when 'google_plus' %}
+        {% if site.author.google_plus %}
+        <li><a href="https://plus.google.com/{{ site.author.google_plus }}" title="My Google+ profile">G+</a></li>
+        {% endif %}
+      {% when 'linkedin' %}
+        {% if site.author.linkedin %}
+        <li><a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" title="My LinkedIn profile">in</a></li>
+        {% endif %}
+      {% when 'steam' %}
+        {% if site.author.steam %}
+        <li><a href="http://steamcommunity.com/id/{{ site.author.steam }}" title="My Steam Community profile">s</a></li>
+        {% endif %}
+      {% endcase %}
+    {% endfor %}
+    </ul>
+
+    <dl class='links'>
+      {% for link in site.theme.minime.links %}
+        <dt><a href="{{ link.url }}">{{ link.name }}</a></dt>
+        {% if link.description %}
+          <dd>{{ link.description }}</dd>
+        {% endif %}
+      {% endfor %}
+    </dl>
+  </main>
+  {% include themes/minime/partials/footer.html %}
+{% include themes/minime/partials/foot.html %}
+</body>
+</html>
