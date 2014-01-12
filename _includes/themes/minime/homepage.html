@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 {% include themes/minime/partials/head.html %}
-<body>
-  {% include themes/minime/partials/header.html %}
+<body id="homepage">
   <main>
-    {% if site.author.bio %}
-      <p class='bio'>{{ site.author.bio }}</p>
-    {% endif %}
+    {% include themes/minime/partials/header.html %}
+    <section class="about">
+      {% if site.author.bio %}
+        <p class='bio'>{{ site.author.bio }}</p>
+      {% endif %}
 
-    {% if site.author.location %}
-      <div class='location'>
-        {{ site.author.location }}
-      </div>
-    {% endif %}
+      {% if site.author.location %}
+        <div class='location detail'>
+          {{ site.author.location }}
+        </div>
+      {% endif %}
 
-    {% if site.author.occupation %}
-      <div class='occupation'>
-        {{ site.author.occupation }}
-      </div>
-    {% endif %}
+      {% if site.author.occupation %}
+        <div class='occupation detail'>
+          {{ site.author.occupation }}
+        </div>
+      {% endif %}
+    </section>
 
-    <ul class='social'>
-    {% for link in site.theme.minime.social_links %}
-      {% case link %}
-      {% when 'twitter' %}
-        {% if site.author.twitter %}
-        <li><a href="https://twitter.com/{{ site.author.twitter }}" title="My Twitter feed">T</a></li>
-        {% endif %}
-      {% when 'facebook' %}
-        {% if site.author.facebook %}
-        <li><a href="https://www.facebook.com/{{ site.author.facebook }}" title="My Facebook page">F</a></li>
-        {% endif %}
-      {% when 'github' %}
-        {% if site.author.github %}
-        <li><a href="https://www.github.com/{{ site.author.github }}" title="My Github profile">g</a></li>
-        {% endif %}
-      {% when 'google_plus' %}
-        {% if site.author.google_plus %}
-        <li><a href="https://plus.google.com/{{ site.author.google_plus }}" title="My Google+ profile">G+</a></li>
-        {% endif %}
-      {% when 'linkedin' %}
-        {% if site.author.linkedin %}
-        <li><a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" title="My LinkedIn profile">in</a></li>
-        {% endif %}
-      {% when 'steam' %}
-        {% if site.author.steam %}
-        <li><a href="http://steamcommunity.com/id/{{ site.author.steam }}" title="My Steam Community profile">s</a></li>
-        {% endif %}
-      {% endcase %}
-    {% endfor %}
-    </ul>
-
-    <dl class='links'>
-      {% for link in site.theme.minime.links %}
-        <dt><a href="{{ link.url }}">{{ link.name }}</a></dt>
-        {% if link.description %}
-          <dd>{{ link.description }}</dd>
-        {% endif %}
+    <section>
+      <ul class='social'>
+      {% for link in site.theme.minime.social_links %}
+        {% case link %}
+        {% when 'twitter' %}
+          {% if site.author.twitter %}
+          <li><a href="https://twitter.com/{{ site.author.twitter }}" title="My Twitter feed" target="_blank"><i class="social-twitter"></i></a></li>
+          {% endif %}
+        {% when 'facebook' %}
+          {% if site.author.facebook %}
+          <li><a href="https://www.facebook.com/{{ site.author.facebook }}" title="My Facebook page" target="_blank"><i class="social-facebook"></i></a></li>
+          {% endif %}
+        {% when 'github' %}
+          {% if site.author.github %}
+          <li><a href="https://www.github.com/{{ site.author.github }}" title="My Github profile" target="_blank"><i class="social-github"></i></a></li>
+          {% endif %}
+        {% when 'google_plus' %}
+          {% if site.author.google_plus %}
+          <li><a href="https://plus.google.com/{{ site.author.google_plus }}" title="My Google+ profile" target="_blank"><i class="social-google-plus"></i></a></li>
+          {% endif %}
+        {% when 'linkedin' %}
+          {% if site.author.linkedin %}
+          <li><a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" title="My LinkedIn profile" target="_blank"><i class="social-linkedin"></i></a></li>
+          {% endif %}
+        {% when 'stackoverflow' %}
+          {% if site.author.stackoverflow %}
+          <li><a href="http://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="My StackOverflow profile" target="_blank"><i class="social-stackoverflow"></i></a></li>
+          {% endif %}
+        {% when 'steam' %}
+          {% if site.author.steam %}
+          <li><a href="http://steamcommunity.com/id/{{ site.author.steam }}" title="My Steam Community profile" target="_blank"><i class="social-steam"></i></a></li>
+          {% endif %}
+        {% endcase %}
       {% endfor %}
-    </dl>
+      </ul>
+    </section>
+
+    <section>
+      <dl class='links'>
+        {% for link in site.theme.minime.links %}
+          <dt><a href="{{ link.url }}">{{ link.name }}</a></dt>
+          {% if link.description %}
+            <dd>{{ link.description }}</dd>
+          {% endif %}
+        {% endfor %}
+      </dl>
+    </section>
   </main>
   {% include themes/minime/partials/footer.html %}
 {% include themes/minime/partials/foot.html %}

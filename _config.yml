@@ -10,15 +10,17 @@ redcarpet:
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title: Michel Billard
+title: // Michel Billard
 tagline: "Web Enthusiast / Technology Geek / Gamer"
 author:
   name: Michel Billard
   bio:
-    This is my bio
-    that spans multiple lines.
-  location: Montreal, QC, Canada
-  occupation: Web developer
+    "I'm a web developer with a passion for user experience and interaction
+    design. I'm always on the lookout for new technologies and techniques. I
+    favor a very pragmatic approach when it comes to solving engineering
+    problems."
+  # location: Montreal, QC, Canada
+  # occupation: Web developer
   # email: blah@email.test
   # blogger:
   # dribble:
@@ -27,7 +29,8 @@ author:
   google_plus: +MichelBillard
   # instagram:
   linkedin: mbillard
-  steam: gogosse
+  stackoverflow: 810/mbillard
+  # steam: gogosse
   twitter: gogosse
   # wordpress:
 
@@ -45,32 +48,24 @@ production_url: http://www.mbillard.com
 #
 theme:
   minime:
-    social_links: ['linkedin', 'twitter', 'facebook', 'google_plus', 'blogger', 'dribble', 'github', 'instagram', 'steam', 'wordpress']
+    social_links: ['blogger', 'dribble', 'facebook', 'google_plus', 'github', 'instagram', 'linkedin', 'stackoverflow', 'steam', 'twitter', 'wordpress']
     # Each link will be displayed in the order listed here
     # Format:
     #
     #  name:
     #  description:
     #  url:
-    #  image:
     #
     links:
       - name: Out of Scope
         description: Blog about software development related topics
         url: http://www.outofscope.com
-        # image:
+      - name: VarageSale
+        description: A virtual garage sale app. We're building this at Codified.
+        url: http://www.varagesale.com
       - name: Survvit
         description: Simple one-question survey creator
         url: http://www.survvit.com
-        # image:
-      - name: VarageSale
-        description: A virtual garage sale site. We're building this at Codified.
-        url: http://www.varagesale.com
-        # image:
-    # header:
-    #   avatar_image_path: images/michel-billard-6.jpg
-    #   avatar_small_image_path: images/michel-billard-6.jpg
-    #   links: ['twitter', 'facebook', 'google_plus', 'linkedin']
 
 # Settings for analytics helper
 # Set 'provider' to the analytics provider you want to use.

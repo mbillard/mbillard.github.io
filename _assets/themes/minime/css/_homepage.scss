@@ -1,0 +1,78 @@
+$blue: #0066cc;
+$emerald: #019875;
+$lighter-gray: #dedede;
+$lightest-gray: #fafafa;
+$darkest-gray: #222;
+
+$background-color: $lighter-gray;
+$text-color: $darkest-gray;
+$project-color: $blue;
+$project-color-highlight: lighten($project-color, 10%);
+
+#homepage {
+  background: $background-color;
+  color: $text-color;
+
+  main {
+    margin: 3% 7% 0;
+    padding: 1.5em;
+    width: 38.196601125%;
+    // background: #373737;
+    // background: rgba(255, 255, 255, 0.1);
+  }
+
+  h1, h2 {
+    // font-family: 'Nunito', sans-serif;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2.4em;
+  }
+  h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 0;
+  }
+
+  section {
+    margin-bottom: 1em;
+  }
+
+  .about .detail {
+    font-size: 0.8em;
+  }
+
+  ul.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+      margin-left: 0.2em;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  dl.links {
+    margin: 0;
+    padding: 0;
+    dt a {
+      text-decoration: none;
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $project-color;
+      transition: color 0.2s ease-in;
+      -webkit-transition: color 0.2s ease-in;
+      &:hover {
+        color: $project-color-highlight;
+      }
+    }
+    dd {
+      margin: 0 0 1em;
+    }
+  }
+}
