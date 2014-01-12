@@ -48,7 +48,7 @@ production_url: http://www.mbillard.com
 #
 theme:
   minime:
-    social_links: ['blogger', 'dribble', 'facebook', 'google_plus', 'github', 'instagram', 'linkedin', 'stackoverflow', 'steam', 'twitter', 'wordpress']
+    social_links: ['blogger', 'dribble', 'facebook', 'github', 'google_plus', 'instagram', 'linkedin', 'stackoverflow', 'steam', 'twitter', 'wordpress']
     # Each link will be displayed in the order listed here
     # Format:
     #

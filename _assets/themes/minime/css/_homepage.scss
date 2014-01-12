@@ -14,11 +14,17 @@ $project-color-highlight: lighten($project-color, 10%);
   color: $text-color;
 
   main {
-    margin: 3% 7% 0;
-    padding: 1.5em;
-    width: 38.196601125%;
+    margin: 0.5em 0.5em 0;
+    padding: 0.5em;
+    max-width: 540px;
     // background: #373737;
     // background: rgba(255, 255, 255, 0.1);
+
+    @media (min-width: $screen-sm-min) {
+      margin: 1em 3em 0;
+      padding: 1.5em;
+      width: 540px;
+    }
   }
 
   h1, h2 {
@@ -49,9 +55,9 @@ $project-color-highlight: lighten($project-color, 10%);
     padding: 0;
     li {
       display: inline;
-      margin-left: 0.2em;
-      &:first-child {
-        margin-left: 0;
+      margin-right: 0.2em;
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
