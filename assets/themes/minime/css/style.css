@@ -436,19 +436,20 @@ table {
 /* line 23, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage h1, #homepage h2 {
   color: #124364;
+  font-family: 'Aldrich';
 }
-/* line 26, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 27, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage h1 {
   margin: 0;
   font-size: 2em;
 }
 @media (min-width: 768px) {
-  /* line 26, ../../../../_assets/themes/minime/css/_homepage.scss */
+  /* line 27, ../../../../_assets/themes/minime/css/_homepage.scss */
   #homepage h1 {
     font-size: 2.4em;
   }
 }
-/* line 33, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 34, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage h2 {
   font-size: 1em;
   font-weight: normal;
@@ -456,36 +457,36 @@ table {
   margin-top: 0;
 }
 @media (min-width: 768px) {
-  /* line 33, ../../../../_assets/themes/minime/css/_homepage.scss */
+  /* line 34, ../../../../_assets/themes/minime/css/_homepage.scss */
   #homepage h2 {
     font-size: 1.2em;
   }
 }
-/* line 43, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 44, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage section {
   margin-bottom: 1em;
 }
-/* line 47, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 48, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage .about .detail {
   font-size: 0.8em;
 }
-/* line 51, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 52, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage ul.social {
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: 0;
 }
-/* line 56, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 57, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage ul.social li {
   display: inline;
 }
-/* line 61, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 62, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage dl.links {
   margin: 0;
   padding: 0;
 }
-/* line 64, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 65, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage dl.links dt a {
   text-decoration: none;
   font-size: 2em;
@@ -495,11 +496,11 @@ table {
   transition: color 0.2s ease-in;
   -webkit-transition: color 0.2s ease-in;
 }
-/* line 72, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 73, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage dl.links dt a:hover {
   color: #f7fbfe;
 }
-/* line 76, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 77, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage dl.links dd {
   margin: 0 0 1em;
 }
