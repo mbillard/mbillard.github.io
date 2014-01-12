@@ -493,15 +493,16 @@ table {
 /* line 67, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage ul.social a {
   display: inline-block;
+  margin-bottom: 1em;
   width: 2.5em;
   text-align: center;
 }
-/* line 74, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 75, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage dl.links {
   margin: 0;
   padding: 0;
 }
-/* line 77, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 78, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage dl.links dt a {
   text-decoration: none;
   font-size: 2em;
@@ -510,7 +511,7 @@ table {
   transition: color 0.2s ease-in;
   -webkit-transition: color 0.2s ease-in;
 }
-/* line 85, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 86, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage dl.links dd {
   margin: 0 0 1em;
 }
