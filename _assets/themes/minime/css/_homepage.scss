@@ -1,13 +1,8 @@
-$blue: #0066cc;
-$emerald: #019875;
-$lighter-gray: #dedede;
-$lightest-gray: #fafafa;
-$darkest-gray: #222;
-
-$background-color: $lighter-gray;
-$text-color: $darkest-gray;
-$project-color: $blue;
-$project-color-highlight: lighten($project-color, 10%);
+$background-color:        $peter-river;
+$text-color:              $darkest-gray;
+$title-color:             darken($background-color, 30%);
+$project-color:           lighten($background-color, 25%);
+$project-color-highlight: lighten($project-color, 20%);
 
 #homepage {
   background: $background-color;
@@ -17,8 +12,6 @@ $project-color-highlight: lighten($project-color, 10%);
     margin: 0.5em 0.5em 0;
     padding: 0.5em;
     max-width: 540px;
-    // background: #373737;
-    // background: rgba(255, 255, 255, 0.1);
 
     @media (min-width: $screen-sm-min) {
       margin: 1em 3em 0;
@@ -28,7 +21,7 @@ $project-color-highlight: lighten($project-color, 10%);
   }
 
   h1, h2 {
-    // font-family: 'Nunito', sans-serif;
+    color: $title-color;
   }
   h1 {
     margin: 0;
