@@ -1,12 +1,18 @@
-$background-color:        $peter-river;
-$text-color:              $darkest-gray;
-$title-color:             darken($background-color, 30%);
-$project-color:           lighten($background-color, 25%);
-$project-color-highlight: lighten($project-color, 20%);
+$background-color:     $peter-river;
+$text-color:           darken($background-color, 35%);
+$link-color:           lighten($background-color, 25%);
+$link-color-highlight: lighten($link-color, 20%);
 
 #homepage {
   background: $background-color;
   color: $text-color;
+
+  a {
+    color: $link-color;
+    &:hover {
+      color: $link-color-highlight;
+    }
+  }
 
   main {
     margin: 0.5em 0.5em 0;
@@ -21,7 +27,6 @@ $project-color-highlight: lighten($project-color, 20%);
   }
 
   h1, h2 {
-    color: $title-color;
     font-family: 'Aldrich';
   }
   h1 {
@@ -56,6 +61,13 @@ $project-color-highlight: lighten($project-color, 20%);
     font-size: 0; // close the white space gap between icons
     li {
       display: inline;
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
+    a {
+      display: inline-block;
+      width: 2.5em;
+      text-align: center;
     }
   }
 
@@ -67,12 +79,8 @@ $project-color-highlight: lighten($project-color, 20%);
       font-size: 2em;
       font-weight: bold;
       text-transform: uppercase;
-      color: $project-color;
       transition: color 0.2s ease-in;
       -webkit-transition: color 0.2s ease-in;
-      &:hover {
-        color: $project-color-highlight;
-      }
     }
     dd {
       margin: 0 0 1em;

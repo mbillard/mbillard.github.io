@@ -27,31 +27,31 @@
         {% case link %}
         {% when 'twitter' %}
           {% if site.author.twitter %}
-          <li><a href="https://twitter.com/{{ site.author.twitter }}" title="My Twitter feed" target="_blank"><i class="social-twitter"></i></a></li>
+          <li><a href="https://twitter.com/{{ site.author.twitter }}" title="My Twitter feed" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
           {% endif %}
         {% when 'facebook' %}
           {% if site.author.facebook %}
-          <li><a href="https://www.facebook.com/{{ site.author.facebook }}" title="My Facebook page" target="_blank"><i class="social-facebook"></i></a></li>
+          <li><a href="https://www.facebook.com/{{ site.author.facebook }}" title="My Facebook page" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
           {% endif %}
         {% when 'github' %}
           {% if site.author.github %}
-          <li><a href="https://www.github.com/{{ site.author.github }}" title="My Github profile" target="_blank"><i class="social-github"></i></a></li>
+          <li><a href="https://www.github.com/{{ site.author.github }}" title="My Github profile" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
           {% endif %}
         {% when 'google_plus' %}
           {% if site.author.google_plus %}
-          <li><a href="https://plus.google.com/{{ site.author.google_plus }}" title="My Google+ profile" target="_blank"><i class="social-google-plus"></i></a></li>
+          <li><a href="https://plus.google.com/{{ site.author.google_plus }}" title="My Google+ profile" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></li>
           {% endif %}
         {% when 'linkedin' %}
           {% if site.author.linkedin %}
-          <li><a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" title="My LinkedIn profile" target="_blank"><i class="social-linkedin"></i></a></li>
+          <li><a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" title="My LinkedIn profile" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
           {% endif %}
         {% when 'stackoverflow' %}
           {% if site.author.stackoverflow %}
-          <li><a href="http://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="My StackOverflow profile" target="_blank"><i class="social-stackoverflow"></i></a></li>
+          <li><a href="http://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="My StackOverflow profile" target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a></li>
           {% endif %}
         {% when 'steam' %}
           {% if site.author.steam %}
-          <li><a href="http://steamcommunity.com/id/{{ site.author.steam }}" title="My Steam Community profile" target="_blank"><i class="social-steam"></i></a></li>
+          <li><a href="http://steamcommunity.com/id/{{ site.author.steam }}" title="My Steam Community profile" target="_blank"><i class="fa fa-steam fa-2x"></i></a></li>
           {% endif %}
         {% endcase %}
       {% endfor %}
