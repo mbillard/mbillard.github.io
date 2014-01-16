@@ -9,6 +9,8 @@ $link-color-highlight: lighten($link-color, 20%);
 
   a {
     color: $link-color;
+    transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
     &:hover {
       color: $link-color-highlight;
     }
@@ -80,8 +82,6 @@ $link-color-highlight: lighten($link-color, 20%);
       font-size: 2em;
       font-weight: bold;
       text-transform: uppercase;
-      transition: color 0.2s ease-in;
-      -webkit-transition: color 0.2s ease-in;
     }
     dd {
       margin: 0 0 1em;

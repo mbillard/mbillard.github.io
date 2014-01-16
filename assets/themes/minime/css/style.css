@@ -422,41 +422,43 @@ table {
 /* line 10, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage a {
   color: #a0cfee;
+  transition: color 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
 }
-/* line 12, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 14, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage a:hover {
   color: #f7fbfe;
 }
-/* line 17, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 19, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage main {
   margin: 0.5em 0.5em 0;
   padding: 0.5em;
   max-width: 540px;
 }
 @media (min-width: 768px) {
-  /* line 17, ../../../../_assets/themes/minime/css/_homepage.scss */
+  /* line 19, ../../../../_assets/themes/minime/css/_homepage.scss */
   #homepage main {
     margin: 1em 3em 0;
     padding: 1.5em;
     width: 540px;
   }
 }
-/* line 29, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 31, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage h1, #homepage h2 {
   font-family: 'Aldrich';
 }
-/* line 32, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 34, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage h1 {
   margin: 0;
   font-size: 2em;
 }
 @media (min-width: 768px) {
-  /* line 32, ../../../../_assets/themes/minime/css/_homepage.scss */
+  /* line 34, ../../../../_assets/themes/minime/css/_homepage.scss */
   #homepage h1 {
     font-size: 2.4em;
   }
 }
-/* line 39, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 41, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage h2 {
   font-size: 1em;
   font-weight: normal;
@@ -464,52 +466,50 @@ table {
   margin-top: 0;
 }
 @media (min-width: 768px) {
-  /* line 39, ../../../../_assets/themes/minime/css/_homepage.scss */
+  /* line 41, ../../../../_assets/themes/minime/css/_homepage.scss */
   #homepage h2 {
     font-size: 1.2em;
   }
 }
-/* line 49, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 51, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage section {
   margin-bottom: 1em;
 }
-/* line 53, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 55, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage .about .detail {
   font-size: 0.8em;
 }
-/* line 57, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 59, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage ul.social {
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: 0;
 }
-/* line 62, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 64, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage ul.social li {
   display: inline;
   font-size: 1rem;
   margin-right: 1rem;
 }
-/* line 67, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 69, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage ul.social a {
   display: inline-block;
   margin-bottom: 1em;
   width: 2.5em;
   text-align: center;
 }
-/* line 75, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 77, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage dl.links {
   margin: 0;
   padding: 0;
 }
-/* line 78, ../../../../_assets/themes/minime/css/_homepage.scss */
+/* line 80, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage dl.links dt a {
   text-decoration: none;
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
-  transition: color 0.2s ease-in;
-  -webkit-transition: color 0.2s ease-in;
 }
 /* line 86, ../../../../_assets/themes/minime/css/_homepage.scss */
 #homepage dl.links dd {
