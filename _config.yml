@@ -31,7 +31,7 @@ author:
   linkedin: mbillard
   stackoverflow: 810/mbillard
   # steam: gogosse
-  twitter: gogosse
+  twitter: crossbrowser
   # wordpress:
 
 # The production_url is only used when full-domain names are needed
@@ -69,6 +69,9 @@ theme:
       - name: Survvit
         description: Simple one-question survey creator
         url: http://www.survvit.com
+      - name: Ville Reine
+        description: (French) Blogue de 2 montréalais exilés à Toronto.
+        url: http://www.villereine.ca
 
 # Settings for analytics helper
 # Set 'provider' to the analytics provider you want to use.
