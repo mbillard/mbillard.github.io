@@ -63,6 +63,9 @@ theme:
       - name: VarageSale
         description: A virtual garage sale app. We're building this at Codified.
         url: http://www.varagesale.com
+      - name: Grid Framework
+        description: A highly customizable responsive grid framework.
+        url: http://www.gridframework.com
       - name: Survvit
         description: Simple one-question survey creator
         url: http://www.survvit.com
