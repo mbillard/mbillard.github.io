@@ -15,8 +15,8 @@ tagline: "Web Enthusiast / Technology Geek / Gamer"
 author:
   name: Michel Billard
   bio:
-    "I'm a web developer with a passion for user experience and interaction
-    design. I'm always on the lookout for new technologies and techniques. I
+    "I'm a web developer with a passion for building a great product with a good user experience and interaction
+    design. I
     favor a very pragmatic approach when it comes to solving engineering
     problems."
   # location: Montreal, QC, Canada
@@ -26,7 +26,7 @@ author:
   # dribble:
   facebook: billard.michel
   github: mbillard
-  google_plus: +MichelBillard
+  # google_plus: +MichelBillard
   # instagram:
   linkedin: mbillard
   stackoverflow: 810/mbillard
@@ -69,6 +69,9 @@ theme:
       - name: Survvit
         description: Simple one-question survey creator
         url: http://www.survvit.com
+      - name: Gars d'Intérieur
+        description: (French) Chaîne YouTube où je fais découvrir des jeux de société.
+        url: https://www.youtube.com/channel/UCi7YUS4F8na2z8G9nl0H0WA
       - name: Ville Reine
         description: (French) Blogue de 2 montréalais exilés à Toronto.
         url: http://www.villereine.ca
