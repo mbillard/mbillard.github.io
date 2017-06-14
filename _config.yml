@@ -31,6 +31,35 @@ author:
   twitter: crossbrowser
   # wordpress:
 
+social_links: ['blogger', 'dribble', 'facebook', 'github', 'google_plus', 'instagram', 'linkedin', 'stackoverflow', 'steam', 'twitter', 'wordpress']
+
+# Each link will be displayed in the order listed here
+# Format:
+#
+#  name:
+#  description:
+#  url:
+#
+links:
+  - name: Out of Scope
+    description: Blog about software development related topics
+    url: http://www.outofscope.com
+  - name: VarageSale
+    description: A virtual garage sale app. We're building this at Codified.
+    url: http://www.varagesale.com
+  - name: Grid Framework
+    description: A highly customizable responsive grid framework.
+    url: http://www.gridframework.com
+  - name: Survvit
+    description: Simple one-question survey creator
+    url: http://www.survvit.com
+  - name: "Gars d'Intérieur"
+    description: "(French) Chaîne YouTube où je fais découvrir des jeux de société."
+    url: https://www.youtube.com/channel/UCi7YUS4F8na2z8G9nl0H0WA
+  - name: Ville Reine
+    description: "(French) Blogue de 2 montréalais exilés à Toronto."
+    url: http://www.villereine.ca
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
@@ -40,38 +69,6 @@ author:
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url: http://www.mbillard.com
-
-# Theme specific variables, switches, etc.
-#
-theme:
-  minime:
-    social_links: ['blogger', 'dribble', 'facebook', 'github', 'google_plus', 'instagram', 'linkedin', 'stackoverflow', 'steam', 'twitter', 'wordpress']
-    # Each link will be displayed in the order listed here
-    # Format:
-    #
-    #  name:
-    #  description:
-    #  url:
-    #
-    links:
-      - name: Out of Scope
-        description: Blog about software development related topics
-        url: http://www.outofscope.com
-      - name: VarageSale
-        description: A virtual garage sale app. We're building this at Codified.
-        url: http://www.varagesale.com
-      - name: Grid Framework
-        description: A highly customizable responsive grid framework.
-        url: http://www.gridframework.com
-      - name: Survvit
-        description: Simple one-question survey creator
-        url: http://www.survvit.com
-      - name: "Gars d'Intérieur"
-        description: "(French) Chaîne YouTube où je fais découvrir des jeux de société."
-        url: https://www.youtube.com/channel/UCi7YUS4F8na2z8G9nl0H0WA
-      - name: Ville Reine
-        description: "(French) Blogue de 2 montréalais exilés à Toronto."
-        url: http://www.villereine.ca
 
 # Settings for analytics helper
 # Set 'provider' to the analytics provider you want to use.

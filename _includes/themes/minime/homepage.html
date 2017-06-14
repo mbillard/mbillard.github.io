@@ -23,7 +23,7 @@
 
     <section>
       <ul class='social'>
-      {% for link in site.theme.minime.social_links %}
+      {% for link in site.social_links %}
         {% case link %}
         {% when 'twitter' %}
           {% if site.author.twitter %}
@@ -60,7 +60,7 @@
 
     <section>
       <dl class='links'>
-        {% for link in site.theme.minime.links %}
+        {% for link in site.links %}
           <dt><a href="{{ link.url }}">{{ link.name }}</a></dt>
           {% if link.description %}
             <dd>{{ link.description }}</dd>
