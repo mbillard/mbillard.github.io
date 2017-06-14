@@ -2,7 +2,7 @@
 permalink: date
 
 exclude: [".ruby-version", ".ruby-gemset", "README.md", "Rakefile"]
-pygments: true
+highlighter: 'pygments'
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "autolink", "strikethrough", "superscript"]
