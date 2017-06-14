@@ -2,10 +2,8 @@
 permalink: date
 
 exclude: [".ruby-version", ".ruby-gemset", "README.md", "Rakefile"]
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
-redcarpet:
-  extensions: ["no_intra_emphasis", "autolink", "strikethrough", "superscript"]
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
