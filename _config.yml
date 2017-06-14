@@ -2,8 +2,8 @@
 permalink: date
 
 exclude: [".ruby-version", ".ruby-gemset", "README.md", "Rakefile"]
-highlighter: 'pygments'
-markdown: redcarpet
+highlighter: pygments
+markdown: kramdown
 redcarpet:
   extensions: ["no_intra_emphasis", "autolink", "strikethrough", "superscript"]
 
