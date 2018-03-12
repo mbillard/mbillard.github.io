@@ -45,7 +45,7 @@ links:
     description: Blog about software development related topics
     url: http://www.outofscope.com
   - name: Aha!
-    description: The world's #1 product roadmap software
+    description: "The world's #1 product roadmap software"
     url: https://www.aha.io
   - name: Grid Framework
     description: A highly customizable responsive grid framework.
