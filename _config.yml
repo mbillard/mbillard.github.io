@@ -21,7 +21,7 @@ author:
   # email: blah@email.test
   # blogger:
   # dribble:
-  facebook: billard.michel
+  # facebook: billard.michel
   github: mbillard
   # google_plus: +MichelBillard
   # instagram:
@@ -47,18 +47,9 @@ links:
   - name: Aha!
     description: "The world's #1 product roadmap software"
     url: https://www.aha.io
-  - name: Grid Framework
-    description: A highly customizable responsive grid framework.
-    url: http://mbillard.com/grid-framework/
   - name: Survvit
     description: Simple one-question survey creator
     url: http://www.survvit.com
-  - name: "Gars d'Intérieur"
-    description: "(French) Chaîne YouTube où je fais découvrir des jeux de société."
-    url: https://www.youtube.com/channel/UCi7YUS4F8na2z8G9nl0H0WA
-  - name: Ville Reine
-    description: "(French) Blogue de 2 montréalais exilés à Toronto."
-    url: http://www.villereine.ca
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -74,7 +65,7 @@ production_url: http://www.mbillard.com
 # Set 'provider' to the analytics provider you want to use.
 # Set 'provider' to false to turn analytics off globally.
 #
-analytics:
-  provider: google
-  google:
-      tracking_id: 'UA-1804335-1'
+# analytics:
+#   provider: google
+#   google:
+#       tracking_id: 'UA-1804335-1'
