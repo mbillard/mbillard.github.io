@@ -9,27 +9,20 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 title: // Michel Billard
-tagline: "Web Enthusiast / Technology Geek / Gamer"
+tagline: "Web developer / Technology geek / Gamer"
 author:
   name: Michel Billard
   bio:
     "I'm a web developer with a passion for building great products with good user experiences and interaction
-    design. I favor a very pragmatic approach when it comes to solving engineering
-    problems."
+    design. I favor a very pragmatic approach when it comes to solving engineering problems."
   # location: Montreal, QC, Canada
   # occupation: Web developer
   # email: blah@email.test
-  # blogger:
   # dribble:
-  # facebook: billard.michel
   github: mbillard
-  # google_plus: +MichelBillard
-  # instagram:
   linkedin: mbillard
   stackoverflow: 810/mbillard
-  # steam: gogosse
   twitter: crossbrowser
-  # wordpress:
 
 social_links: ['blogger', 'dribble', 'facebook', 'github', 'google_plus', 'instagram', 'linkedin', 'stackoverflow', 'steam', 'twitter', 'wordpress']
 
@@ -59,7 +52,7 @@ links:
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url: http://www.mbillard.com
+production_url: https://www.mbillard.com
 
 # Settings for analytics helper
 # Set 'provider' to the analytics provider you want to use.
