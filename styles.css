@@ -87,6 +87,10 @@ h1 {
   margin-bottom: 0;
 }
 
+main p+p {
+  text-indent: 1.5em;
+}
+
 .modifiers {
   font-size: 16px;
 }
