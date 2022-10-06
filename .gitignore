@@ -1,14 +1,4 @@
-_assets/.sass-cache/
-_site/*
-_deploy/
-_theme_packages/*
-
-.bundle
-
 Thumbs.db
 .DS_Store
 
 !.gitkeep
-
-.ruby-version
-.ruby-gemset
