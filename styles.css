@@ -100,8 +100,14 @@ main p+p {
   text-align: center;
 }
 
-@media screen and (max-width:590px) {
+@media screen and (max-width:620px) {
   main {
     width: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .main-nav {
+    margin-right: 1em;
   }
 }
