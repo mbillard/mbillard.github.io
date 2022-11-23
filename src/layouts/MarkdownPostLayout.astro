@@ -1,0 +1,65 @@
+---
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <section class="content">
+    <h1>{frontmatter.title}</h1>
+    <p class="published-on">
+      <span class="text-italic">published on</span>
+      {frontmatter.publishedAt.slice(0, 10)}
+    </p>
+    <div class="post-body">
+      <slot />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .content {
+    margin: 1em auto;
+    padding: 1em;
+    max-width: var(--layout-width);
+    line-height: 1.4em;
+  }
+
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    line-height: 1em;
+    margin-bottom: 0;
+  }
+
+  .published-on {
+    text-align: center;
+  }
+
+  .text-italic {
+    font-style: italic;
+  }
+</style>
+
+<style is:global>
+  .post-body code {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+      "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+      "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+      monospace;
+    background: #ddd;
+    padding: 0.15em 0.25em;
+  }
+
+  .post-body code.code-block {
+    display: block;
+    padding: 0.5em;
+  }
+
+  .post-body blockquote {
+    border-left: solid var(--accent) 10px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    margin-left: 0;
+  }
+</style>
