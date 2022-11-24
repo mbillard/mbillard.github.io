@@ -52,12 +52,17 @@ const { title } = Astro.props;
       #da62c4 30%,
       white 60%
     );
+    --background-color: #f6f6f6;
+
+    /* variations of https://www.color-hex.com/color/7d26cd */
+    --hover-color: #e5d3f5;
+    --border-color: #b17ce1;
 
     --layout-width: 60ch;
   }
   html {
     font-family: system-ui, sans-serif;
-    background-color: #f6f6f6;
+    background-color: var(--background-color);
   }
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
