@@ -1,17 +1,9 @@
 <script>
+  import { clickOutside } from "../helpers/clickOutside";
+
   let isOpen = false;
 
   export let title;
-
-  let trigger;
-
-  function onClick(event) {
-    if (isOpen && !trigger?.contains(event.target)) {
-      isOpen = false;
-    }
-  }
-
-  document.body.addEventListener("click", onClick);
 </script>
 
 <div class="dropdown">
@@ -20,7 +12,8 @@
     class:open={isOpen}
     type="button"
     on:click={() => (isOpen = !isOpen)}
-    bind:this={trigger}
+    use:clickOutside
+    on:outclick={() => (isOpen = false)}
   >
     {title} <img class="caret" src="/assets/caret-down.svg" alt="" />
   </button>

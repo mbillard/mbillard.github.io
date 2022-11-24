@@ -9,6 +9,7 @@
     display: block;
     padding: 0.5em;
     text-decoration: none;
+    color: black;
   }
   a:hover {
     background-color: var(--hover-color);
