@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Michel Billard's personal website">
+  <main>
+    <h1 class="text-accent">Michel Billard</h1>
+    <p style="margin-top: 0;">pronounced <em>me-shell</em> · he/him</p>
+    <div class="content">
+      <p>Hi! 👋</p>
+
+      <p>
+        I have over 15 years of experience building great products with a focus
+        on good user experience. I have collaborated closely with product
+        managers, designers, data analysts, executives, customers, and
+        developers to analyse, define, launch, and iterate on dozens and dozens
+        of features loved by users.
+      </p>
+
+      <p>
+        I've used data and customer feedback to inform product decisions. I've
+        done numerous A/B tests. I've launched features behind feature flags so
+        that we could roll them out at the desired pace. I've done backend,
+        frontend, and database development.
+      </p>
+
+      <p>
+        I'm fully bilingual in English and French. I have worked remotely for
+        the past 4 years.
+      </p>
+
+      <p>
+        Apart from product management and web development work, I'm interested
+        in personal finance (wrote a few blog posts), board games (started a
+        YouTube channel, built an app for a C$ 700k Kickstarter), video games
+        (built a web app to leverage the community to brute-force a puzzle in
+        Fez), and escape rooms (100% success rate so far).
+      </p>
+
+      <div class="social">
+        <a href="https://twitter.com/crossbrowser">Twitter</a> · <a
+          href="https://www.linkedin.com/in/mbillard/">LinkedIn</a
+        > · <a href="https://github.com/mbillard/">GitHub</a>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5em;
+    max-width: var(--layout-width);
+  }
+  h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-accent {
+    color: var(--accent);
+  }
+  .content {
+    line-height: 1.4;
+    margin: 1em 0;
+  }
+  .social {
+    text-align: center;
+  }
+</style>
